@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melany's Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/818586f326.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="sendmail.php">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="navbar" id="navLinks">
+               
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="resources.html">RESOURCES</a>
+                        <ul>
+                            <li><a href="codingforkids.html">coding for kids</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactme.html">CONTACT</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+     
+</section>
+
+<br><h1>Contact Me</h1>
+
+
+
+
+<br>
+<section>
+<div class="contact-col" data-aos="fade-down" data-aos-duration="1000">
+    <center><form action="https://formsubmit.co/melaguti03@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="enter your name" required>
+        <input type="email" name="email" placeholder="enter email address" required>
+        <input type="text" name="subject" placeholder="enter your subject" required>
+        <textarea rows="8"  name="message" placeholder="message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">send message</button>
+        <input type="hidden" name="_next" value="https://melanysite.000webhostapp.com/thankyou.html">
+    </form></center>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <p>None of the videos used in this website are mine, nor do I have any affiliation with any of the creators </p>
+    <p> Made with <i class="far fa-heart"></i> by Melany Gutierrez</p>
+</section>
+
+
+
+<script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

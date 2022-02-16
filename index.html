@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melany's Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/818586f326.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+ 
+
+</head>
+<body>
+   
+    <section class="header">
+        <nav>
+            <div class="navbar" id="navLinks">
+               
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="resources.html">RESOURCES</a>
+                        <ul>
+                            <li><a href="codingforkids.html">coding for kids</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactme.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+</section>
+
+
+<section class="footer" data-aos="fade-down" data-aos-duration="1000">
+    <br>
+    <h1>About Me</h1>
+    <br>
+    <p> Hello my name is Melany Gutierrez, I am going to be a senior at Overfelt Highschool this upcoming
+        fall. Some of my intrests are cooking, dancing, but most importantly coding!
+    <br> I actually created this website, however not all alone with the help of some awesome youtube creators :)
+         I know you are probably wondering what this website is for, well I decided to gather all the most helpful youtube videos 
+        in one place so you do not have to look for them! </p>
+</section>
+
+
+
+
+
+
+
+<section class="course">
+    <h1>My main goals for this website</h1>
+    <div class="row">
+        <div class="course-col" data-aos="fade-right" data-aos-duration="1000">
+            <h3>goal 1</h3>
+            <p>to help others potentially build own website like I did </p>
+
+        </div>
+
+        <div class="course-col" data-aos="fade-left" data-aos-duration="1000">
+                <h3>goal 2</h3>
+                <p>to help inspire others because if I was able so can you!</p>
+    
+            </div>
+
+        <div class="course-col" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>goal 3</h3>
+                    <p>to give back to my community, by giving guidance to others on
+                    <br> how to start their coding journey</p>
+        
+                </div>
+
+    </div>
+    <p>None of the videos used in this website are mine, nor do I have any affiliation with any of the creators </p>
+    <p>Made with <i class="far fa-heart"></i> by Melany Gutierrez</p>
+</section>
+
+
+
+
+<script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
